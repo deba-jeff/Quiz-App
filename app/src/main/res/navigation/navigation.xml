@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="ukponahiunsijeffery.example.quizapp.screens.HomeFragment"
+        android:label="Quiz App"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_quizFragment"
+            app:destination="@id/quizFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/quizFragment"
+        android:name="ukponahiunsijeffery.example.quizapp.screens.QuizFragment"
+        android:label="Quiz App"
+        tools:layout="@layout/fragment_quiz">
+        <action
+            android:id="@+id/action_quizFragment_to_quizEndFragment"
+            app:destination="@id/quizEndFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/quizEndFragment"
+        android:name="ukponahiunsijeffery.example.quizapp.screens.QuizEndFragment"
+        android:label="Quiz App"
+        tools:layout="@layout/fragment_quiz_end">
+        <action
+            android:id="@+id/action_quizEndFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_quizEndFragment_to_homeFragment2"
+            app:popUpTo="@id/homeFragment" />
+        <action
+            android:id="@+id/action_quizEndFragment_to_homeFragment3"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+</navigation>

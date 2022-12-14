@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".screens.QuizFragment"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/quiz_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="How many soccer players should be on the field at the same time"
+            android:text=""
+            android:textSize="24sp"
+            android:textColor="@color/dark_gray"
+            android:paddingBottom="16dp" />
+
+        <TextView
+            android:id="@+id/correct_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            tools:text="22"
+            android:textSize="20sp"
+            android:textColor="@color/dark_gray"
+            android:paddingBottom="4dp" />
+
+        <TextView
+            android:id="@+id/first_wrong_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            tools:text="24"
+            android:textSize="20sp"
+            android:textColor="@color/dark_gray"
+            android:paddingBottom="4dp" />
+
+        <TextView
+            android:id="@+id/second_wrong_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp"
+            android:text=""
+            android:textColor="@color/dark_gray"
+            android:textSize="20sp"
+            tools:text="26" />
+
+        <TextView
+            android:id="@+id/third_wrong_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp"
+            android:text=""
+            android:textSize="20sp"
+            android:textColor="@color/dark_gray"
+            tools:text="20" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end">
+
+            <Button
+                android:id="@+id/next_question_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:adjustViewBounds="true"
+                android:text="Next"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</layout>
